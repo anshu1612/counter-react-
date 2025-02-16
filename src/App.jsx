@@ -13,9 +13,9 @@ function App() {
         <div className="bg-black p-10 w-5/6 rounded-3xl">
           <Counter count={count}></Counter>
           <div className="flex justify-around text-4xl">
-            <Increment onSelect={() => setCount(count + 1)} />
-            <Reset onSelect={() => setCount(0)} />
             <Decrement count={count} onSelect={() => setCount(count - 1)} />
+            <Reset onSelect={() => setCount(0)} />
+            <Increment onSelect={() => setCount(count + 1)} />
           </div>
         </div>
       </div>
